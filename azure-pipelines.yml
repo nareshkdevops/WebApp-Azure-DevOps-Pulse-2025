@@ -10,7 +10,7 @@ trigger:
 pool:
  name: 'Default'
  demands:
-   - Agent.Name -equals self-host-vm-01
+   - Agent.Name -equals selfagent001
 
 variables:
   solution: '**/*.sln'
