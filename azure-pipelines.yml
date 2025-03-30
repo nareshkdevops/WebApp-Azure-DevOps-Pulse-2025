@@ -8,7 +8,9 @@ trigger:
 - master
 
 pool:
-  vmImage: 'windows-latest'
+ name: 'Default'
+ demands:
+   - Agent.Name -equals self-host-vm-01
 
 variables:
   solution: '**/*.sln'
